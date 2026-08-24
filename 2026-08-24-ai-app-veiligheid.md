@@ -4,7 +4,7 @@ In januari 2026 bouwde iemand een complete app zonder zelf een regel code te sch
 
 ### Het probleem, in cijfers
 
-Uit onderzoek bij grote bedrijven blijkt dat ontwikkelaars die met AI werken drie tot vier keer zoveel code leveren, maar tien keer zoveel beveiligingsfouten introduceren. Veracode testte meer dan honderd AI-modellen op beveiligingsgevoelige programmeertaken en vond dat 45 procent van de gegenereerde code een bekende, veelvoorkomende kwetsbaarheid bevat. Dit is geen incident. Dit is bezig de nieuwe standaard te worden.
+Uit onderzoek bij grote bedrijven blijkt dat ontwikkelaars die met AI werken drie tot vier keer zoveel code leveren, maar tien keer zoveel beveiligingsmeldingen opleveren. Dat cijfer bewijst niet dat AI-code per regel tien keer gevaarlijker is, het kan net zo goed betekenen dat het tempo van produceren de menselijke controle inhaalt. Wat wel vaststaat: Veracode testte meer dan honderd AI-modellen in een gecontroleerde test, specifiek op beveiligingsgevoelige programmeertaken, en 45 procent van die code bevatte een bekende kwetsbaarheid. Dat is geen uitspraak over willekeurige productiecode, maar het laat wel zien dat de modellen die je dagelijks gebruikt dit soort fouten aantoonbaar kunnen maken.
 
 ### Wat er precies misging
 
@@ -17,6 +17,8 @@ De sleutel naar de database stond gewoon zichtbaar in de website-code. Dat hoeft
 3. Vind je zo'n sleutel, noteer dan de projectnaam die erbij hoort.
 4. De volgende vraag is of er ook echt data achter die sleutel zit zonder in te loggen. Dat zelf narekenen vraagt iets meer technische kennis dan de eerste drie stappen. Een ontwikkelaar kan dit meestal in twee minuten voor je bevestigen.
 5. Twijfel je, vraag het gewoon na bij wie de app gebouwd heeft, of laat het checken.
+
+Een eerlijke kanttekening: deze ene check is een rookmelder voor precies één bekende, veelvoorkomende fout. Het is geen volledige beveiligingsaudit. Een echte controle kijkt ook naar of gebruiker A ooit bij data van gebruiker B kan door simpelweg een nummer in een link te veranderen, of de server zelf checkt wie welke actie mag doen in plaats van alleen de website, en wat er precies naar een AI-model als OpenAI of Anthropic wordt gestuurd als iemand gevoelige informatie invoert. Deze checklist vangt één fout die we vandaag bij meerdere echte apps zagen. Voor de rest is een breder overzicht nodig.
 
 ### Tot slot
 
